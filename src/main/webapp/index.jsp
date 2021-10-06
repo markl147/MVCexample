@@ -25,7 +25,13 @@
     <input type = submit name = submit>
 
 </form>
-<br/>
+
+<br><br><br><br><br>
+
+<form method="post" action="/ListUsersServlet">
+    <input type = submit name = UserList>
+
+</form>
 <%--<a href="hello-servlet">Hello Servlet</a>--%>
 </body>
 </html>
