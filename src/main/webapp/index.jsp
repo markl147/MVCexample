@@ -32,6 +32,13 @@
     <input type = submit name = UserList>
 
 </form>
+
+<br><br><br><br><br>
+
+<form method="post" action="/ListBooksServlet">
+    <input type = submit name = booksList>
+
+</form>
 <%--<a href="hello-servlet">Hello Servlet</a>--%>
 </body>
 </html>

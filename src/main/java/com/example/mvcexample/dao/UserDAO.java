@@ -1,4 +1,4 @@
-package com.example.mvcexample.model;
+package com.example.mvcexample.dao;
 
 import com.example.mvcexample.User;
 
