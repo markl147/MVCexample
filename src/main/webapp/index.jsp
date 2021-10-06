@@ -35,8 +35,19 @@
 
 <br><br><br><br><br>
 
-<form method="post" action="/ListBooksServlet">
+<form method="get" action="/ListBooksServlet">
     <input type = submit name = booksList>
+
+</form>
+
+
+<br><br><br><br><br>
+
+<form method="post" action="/ListBooksServlet">
+    <p>Please enter the title: <input type = text name = "title"></p>
+    <p>Please enter the author: <input type = text name = "author"></p>
+    <p>Please enter the publisher: <input type = text name = "publisher"></p>
+    <input type = submit name = Q3>
 
 </form>
 <%--<a href="hello-servlet">Hello Servlet</a>--%>

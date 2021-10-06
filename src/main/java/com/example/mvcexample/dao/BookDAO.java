@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BookDAO {
-    private static ArrayList<Book> books = new ArrayList();
+    private List<Book> books = new ArrayList();
 
     public BookDAO(){
         Book b1 = new Book("Fellowship", "Tolkien", "Penguin");
@@ -18,7 +18,10 @@ public class BookDAO {
         books.add(b3);
     }
 
-    public static List<Book> books() {
+    public void addNewBook(Book b) {
+        books.add(b);
+    }
+    public List<Book> books() {
         return books;
     }
 }

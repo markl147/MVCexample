@@ -19,15 +19,32 @@ import java.util.List;
 public class ListBooksServlet extends HttpServlet {
 
     @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+        response.setContentType("text/html");
+
+        BookDAO bdao = new BookDAO();
+//        List<Book> books = new ArrayList<>();
+//        books = BookDAO.books();
+
+        request.setAttribute("myBookList", bdao.books());
+        request.getRequestDispatcher("listBooks.jsp").forward(request, response);
+    }
+
+    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         response.setContentType("text/html");
 
-        new BookDAO();
-        List<Book> books = new ArrayList<>();
-        books = BookDAO.books();
+        BookDAO bdao = new BookDAO();
+        String title = request.getParameter("title");
+        String author = request.getParameter("author");
+        String publisher = request.getParameter("publisher");
 
-        request.setAttribute("myBookList", books);
+        Book newEntry = new Book(title, author, publisher);
+        bdao.addNewBook(newEntry);
+
+        request.setAttribute("myBookList", bdao.books());
         request.getRequestDispatcher("listBooks.jsp").forward(request, response);
     }
 }
