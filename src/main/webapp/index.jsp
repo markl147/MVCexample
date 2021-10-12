@@ -47,7 +47,7 @@
     <p>Please enter the title: <input type = text name = "title"></p>
     <p>Please enter the author: <input type = text name = "author"></p>
     <p>Please enter the publisher: <input type = text name = "publisher"></p>
-    <input type = submit name = Q3>
+    <input type = submit name = submit>
 
 </form>
 <%--<a href="hello-servlet">Hello Servlet</a>--%>
