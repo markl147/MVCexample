@@ -16,7 +16,6 @@
 </form>
 
 <br>
-<br><br><br><br><br>
 
 <form method="post" action="/BookServlet">
     <p>Please enter the title: <input type = text name = "title"></p>
@@ -26,24 +25,27 @@
 
 </form>
 
-<br><br><br><br><br>
+<br>
 
 <form method="post" action="/ListUsersServlet">
+    <p>ListUsersServlet</p>
     <input type = submit name = UserList>
 
 </form>
 
-<br><br><br><br><br>
+<br>
 
 <form method="get" action="/ListBooksServlet">
+    <p>ListBooksServlet</p>
     <input type = submit name = booksList>
 
 </form>
 
 
-<br><br><br><br><br>
+<br>
 
 <form method="post" action="/ListBooksServlet">
+    <p>Create new book</p>
     <p>Please enter the title: <input type = text name = "title"></p>
     <p>Please enter the author: <input type = text name = "author"></p>
     <p>Please enter the publisher: <input type = text name = "publisher"></p>

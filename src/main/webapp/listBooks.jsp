@@ -13,43 +13,28 @@
 </head>
 <body>
 <table>
-    <tr>
+<%--    <tr>--%>
         <th>
-            Title:
+            Title :
         </th>
-        <br>
-        <br>
+
         <th>
             Author :
         </th>
-        <br>
-        <br>
+
         <th>
             Publisher :
         </th>
-    </tr>
+<%--    </tr>--%>
+
+    <c:forEach items="${myBookList}" var="book">
     <tr>
-        <td><c:out value = "${myBookList[0].title}" />  </td>
-        <td><c:out value = "${myBookList[0].author}" />  </td>
-        <td><c:out value = "${myBookList[0].publisher}" />  </td>
-
+        <td><c:out value="${book.title}"/></td>
+        <td><c:out value="${book.author}"/></td>
+        <td><c:out value="${book.publisher}"/></td>
+        <br>
     </tr>
-
-    <tr>
-        <td><c:out value = "${myBookList[1].title}" /></td>
-        <td><c:out value = "${myBookList[1].author}" />  </td>
-        <td><c:out value = "${myBookList[1].publisher}" />  </td>
-
-    </tr>
-
-    <tr>
-        <td><c:out value = "${myBookList[2].title}" /></td>
-        <td><c:out value = "${myBookList[2].author}" />  </td>
-        <td><c:out value = "${myBookList[2].publisher}" />  </td>
-    </tr>
+    </c:forEach>
 </table>
-<br>
-</head>
-
 </body>
 </html>

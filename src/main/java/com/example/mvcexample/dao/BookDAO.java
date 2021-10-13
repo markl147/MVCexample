@@ -10,7 +10,7 @@ public class BookDAO {
 
     public BookDAO(){
         Book b1 = new Book("Fellowship", "Tolkien", "Penguin");
-        Book b2 = new Book("Chamber of Secrets", "Rowling", "Flamingo");
+        Book b2 = new Book("Chamber", "Rowling", "Flamingo");
         Book b3 = new Book("Java", "Martina", "Rhino");
 
         books.add(b1);
